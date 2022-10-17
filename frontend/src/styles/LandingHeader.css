@@ -1,0 +1,52 @@
+.top-nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    position: fixed;
+    
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    padding-top: 15px;
+    
+}
+
+.nav-list > li > a{
+    text-decoration: none;
+}
+ 
+.nav-item{
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.join-btn{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.join-btn:hover{
+    background-color: rgb(234, 231, 231);
+    border-radius: 50px;
+}
+
+.Sign-in-btn{
+    border: 1px solid blue;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.Sign-in-btn:hover{
+    background-color: rgb(225, 225, 244);
+}
