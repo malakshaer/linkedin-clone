@@ -1,0 +1,46 @@
+.register-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-section > h1{
+    font-weight: 400;
+}
+
+.register-section > form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(244, 199, 238);
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgb(0 0 0 / 30%);
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+    
+}
+
+.register-section > form > input{
+    height: 30px;
+    border: 1px solid rgb(141, 138, 138);
+    border-radius: 5px;
+    
+}
+
+.register-section > form > label{
+    display: inline-flex;
+    color: rgb(79, 76, 76);
+}
+
+.register-section > form > p{
+    font-size: 12px;
+}
+
+.register-section > form > p > span{
+    color: blue;
+}
+
+.register-section > form > div{
+    padding-top: 5px;
+}
