@@ -1,0 +1,39 @@
+/*Job Body Section*/
+
+.job-container{
+    padding-top: 100px;
+    background-color: rgb(246, 246, 243);
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.join-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.join-card > div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.join-card > div >img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.apply-btn{
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid lightgray;
+    background-color: rgb(12, 143, 45);
+    color: white;
+    cursor: pointer;
+}
