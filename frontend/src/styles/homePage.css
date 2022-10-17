@@ -1,0 +1,112 @@
+/*Header of the Home*/
+
+.top-nav-bar{
+    background-color: white;
+}
+
+.linkedin-logo-header > img{
+    width: 40px;
+    height:40px;
+    padding-top: 20px;
+}
+
+.linkedin-logo-header > input{
+    height: 30px;
+    width: 240px;
+    margin: 10px;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.Sign-out-btn{
+    border: 1px solid rgb(5, 5, 6);
+    border-radius: 50px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.Sign-out-btn:hover{
+    background-color: rgb(240, 193, 193);
+    color: brown;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+
+/*Body of the Home*/
+
+.body-container{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(246, 246, 243);
+    height: 100%;
+}
+
+/*Left Section*/
+
+.left-container{
+    border: 1px solid lightgray;
+    padding: 20px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: white;
+    width: 15%;
+}
+
+/*Center Section*/
+
+.center-container{
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    width: 50%;
+}
+
+.enter-post{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.enter-post > img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.enter-post > input{
+    border: 1px solid rgb(112, 111, 111);
+    border-radius: 40px;
+    padding-left: 10px;
+    width: 30rem;
+}
+
+/*Right Section*/
+
+.right-container{
+    border: 1px solid lightgray;
+    padding: 20px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: white;
+    width: 15%;
+}
+
+.right-container > div > img{
+    width: 40px;
+}
+
+.follow-btn{
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgb(110, 106, 106);
+    color: rgb(110, 106, 106);
+    background-color: white;
+    margin-top: 10px;
+}
