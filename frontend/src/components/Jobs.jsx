@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import "../styles/job.css";
 import companyImage from "../assets/profile-image.jpg";
-import ApplyButton from "./ApplyButton";
+import Button from "./Button";
 
 const Jobs = () => {
   return (
@@ -17,7 +17,7 @@ const Jobs = () => {
               <span>Name</span>
             </div>
             <p>Text</p>
-            <ApplyButton />
+            <Button className="apply-btn" text={"Apply now"} />
           </div>
         </div>
       </div>
