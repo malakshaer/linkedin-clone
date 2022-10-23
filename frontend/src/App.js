@@ -5,6 +5,7 @@ import Application from "./pages/Application";
 import Home from "./components/Home";
 import Jobs from "./components/Jobs";
 import Notification from "./components/Notification";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Jobs" element={<Jobs />} />
         <Route path="/Notification" element={<Notification />} />
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
