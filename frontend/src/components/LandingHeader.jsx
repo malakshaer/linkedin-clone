@@ -5,8 +5,8 @@ import discover from "../assets/discover.png";
 import people from "../assets/people.svg";
 import learning from "../assets/learning.svg";
 import jobs from "../assets/jobs.svg";
-import JoinButton from "./JoinButton";
-import SignInButton from "./SignInButton";
+import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const navLinks = [
   {
@@ -35,6 +35,7 @@ const navLinks = [
 const LandingHeader = () => {
   const menuRef = useRef();
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+  const navigate = useNavigate();
 
   return (
     <div className="top-nav-bar">
@@ -50,8 +51,18 @@ const LandingHeader = () => {
               </li>
             ))}
             <div>|</div>
-            <JoinButton />
-            <SignInButton />
+            <Button
+              text={"Join now"}
+              onClick={() => {
+                navigate("../RegisterPage");
+              }}
+            />
+            <Button
+              text={"Sign in"}
+              onClick={() => {
+                navigate("../LandingPage");
+              }}
+            />
           </ul>
         </div>
       </div>
