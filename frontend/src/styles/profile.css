@@ -1,0 +1,70 @@
+/*Profile Body Section*/
+
+.profile-container{
+    padding-top: 100px;
+    background-color: rgb(246, 246, 243);
+    height: 520px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+/*Information Container*/
+
+.info-container{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    height: fit-content;
+    width: 50rem;
+}
+
+.info-container > div >img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.edit-btn{
+    width: 40px;
+    float: right;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/*Education Container*/
+
+.education-container{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+/*Right Container*/
+
+.profile-left{
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 15px;
+    height:fit-content;
+}
+
+.profile-left > img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+    .profile-left{
+        display: none;
+    }
+    .info-container{
+        width: 30rem;
+    }
+
+}
