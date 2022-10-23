@@ -1,7 +1,10 @@
 import React from "react";
 import profile_image from "../assets/profile-image.jpg";
-import FollowButton from "./FollowButton";
+import Button from "./Button";
 import Header from "./Header";
+import companyImage from "../assets/profile-image.jpg";
+import post from "../assets/post-image.jpg";
+import "../styles/homePage.css";
 
 const posts = [
   {
@@ -34,6 +37,16 @@ const Body = ({ user_name, name, text }) => {
           <div>
             <hr />
           </div>
+          <div className="post-container">
+            <div className="post-card">
+              <div>
+                <img src={companyImage} alt="company" />
+                <span>Name</span>
+              </div>
+              <p>Text</p>
+              <img src={post} alt="post" />
+            </div>
+          </div>
         </div>
         <div className="right-container">
           <h3>Add to your feed</h3>
@@ -42,7 +55,7 @@ const Body = ({ user_name, name, text }) => {
               <div>
                 <img src={profile_image} alt="profile" />
                 <span>{name}</span>
-                <FollowButton />
+                <Button text={"Follow"} />
               </div>
             ))}
           </div>
