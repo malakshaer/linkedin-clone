@@ -1,15 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const SignInButton = ({ text, onClick, color }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
-    <button
-      className={color + " Sign-in-btn"}
-      onClick={() => {
-        navigate("../LandingPage");
-      }}
-    >
+    <button className={color + " Sign-in-btn"} onClick={onClick}>
       {text}
     </button>
   );
