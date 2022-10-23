@@ -1,12 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../styles/homePage.css";
 import Logo from "../assets/home-logo.png";
-import Home from "../assets/discover.png";
-import Jobs from "../assets/people.svg";
-import notifications from "../assets/learning.svg";
-import SignOutButton from "./SignOutButton";
+// import Home from "../assets/discover.png";
+// import Jobs from "../assets/people.svg";
+// import notifications from "../assets/learning.svg";
+import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ text }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="top-nav-bar">
       <div className="linkedin-logo-header">
@@ -26,7 +29,17 @@ const Header = ({ text }) => {
             <li>
               <a href="/Notification">Notification</a>
             </li>
-            <SignOutButton />
+            <li>
+              <a href="/Profile">Profile</a>
+            </li>
+            <Button
+              className="Sign-out-btn"
+              text={"Sign Out"}
+              color={"brown"}
+              onClick={() => {
+                navigate("../LandingPage");
+              }}
+            />
           </ul>
         </div>
       </div>
